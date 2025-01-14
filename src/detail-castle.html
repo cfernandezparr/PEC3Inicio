@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle - Castillo de Jaén</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de Jaén" id="logo" loading="lazy">
+        <span><h1>Castillo de Santa Catalina</h1></span>
+     </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Portada</a></li>
+            <li><a href="category.html">Categoría</a></li>
+            <li><a href="presentation.html">Presentación</a></li>
+            <li><a href="links.html">Enlaces</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <picture>
+            <source srcset="castillo-movil.jpg?as=webp" type="image/webp" media="(max-width: 600px)">
+            <source srcset="castillo.jpg" type="image/jpeg" media="(min-width: 601px)">
+            <img src="castillo.jpg" alt="Catedral de Jaén" loading="lazy">
+        </picture>
+
+        <p>El castillo de Santa Catalina, o alcázar nuevo es una antigua construcción defensiva de acabado cristiano-medieval, que corona el cerro del mismo nombre, en una estribación de la Sierra de Jabalcuz a 820 m de altitud, desde la cual se divisa toda la ciudad de Jaén, los olivares y las montañas circundantes de la zona. Es una de las tres fortalezas que constituyen el recinto defensivo Castillo de Jaén, junto con el Alcázar Viejo y el Abrehuí.</p>
+        <p>Este recinto se asienta sobre la roca viva del cerro. En su lado oeste, se sitúa la Torre del Homenaje que, en otros tiempos, servía de vertebración con la antigua alcazaba. Es una gran torre de planta cuadrada, con 15,45 m de lado, y más de 30 m de altura, con tres plantas y terraza, con bóvedas cruzadas con arcos ojivales, y acceso desde el patio de armas.</p>
+        <p>Los primeros indicios de ocupación del cerro de Santa Catalina se remontan a la Edad del Bronce, correspondiendo a restos cerámicos hallados en la ladera norte y en la cima, sin evidencias concretas en cuanto al tipo de hábitat.</p>
+        <ul>
+            <li>Ubicación: Cerro de Santa Catalina</li>
+            <li>Horario: 10:00 - 19:00</li>
+            <li>Entrada: 3 EUR</li>
+        </ul>
+        <div id="map2" style="height: 400px; width: 100%;"></div>
+    </main>
+    <script src="app.js" type="module" defer></script>
+    <footer>
+        <img src="logo.png" alt="Logo de Jaén" id="footer-logo" loading="lazy">
+        <nav>
+          <ul>
+            <li><a href="index.html">Portada</a></li>
+            <li><a href="category.html">Categoría</a></li>
+            <li><a href="presentation.html">Presentación</a></li>
+            <li><a href="links.html">Enlaces</a></li>
+          </ul>
+        </nav>
+        <p>&copy; 2024 Jaén, Paraíso Interior. Todos los derechos reservados.</p>
+      </footer>
+</body>
+</html>
